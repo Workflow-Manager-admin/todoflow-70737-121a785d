@@ -56,7 +56,7 @@ function cancelDelete() {
     >
       <input
         type="checkbox"
-        v-model="todo.completed"
+        :checked="todo.completed"
         @change="$emit('toggle', todo.id)"
         :aria-label="todo.completed ? 'Mark active' : 'Mark completed'"
         class="todo-checkbox"

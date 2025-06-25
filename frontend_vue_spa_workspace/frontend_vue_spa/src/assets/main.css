@@ -1,0 +1,35 @@
+@import './base.css';
+
+/* Theme color additions for SPA to-do app */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #64748b;
+  --accent-color: #f59e42;
+}
+
+[data-theme='dark'] {
+  --primary-color: #3b82f6;
+  --secondary-color: #9ba1b7;
+  --accent-color: #f59e42;
+}
+
+#app {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+  transition: background 0.5s, color 0.5s;
+}
+
+@media (min-width: 600px) {
+  #app {
+    max-width: 520px;
+    padding: 0;
+  }
+}
